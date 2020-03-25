@@ -4,4 +4,4 @@
 
 3. As a beginner piano student, I want to engage with an entertaining teaching interface so I can learn without severe boredom.
 
-4. As a parent of a beginner piano student, I want my child to simultaneously learn and be entertained by that learning so I can leave him/her to use a computer for a while without feeling guilty about taking a break from parenting.
+4. As a parent of a beginner piano student, I want my child to simultaneously learn and be entertained by that learning so I can leave him/her to use a computer for a while without feeling guilty about taking a break from parenting.    
