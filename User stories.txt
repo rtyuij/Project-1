@@ -1,0 +1,7 @@
+1. As a beginner piano student, I want to learn the letter names of the keys on the piano so that I can understand instruction from a piano teacher.
+
+2. As a parent of a beginner piano student, I want to teach my child the names of the keys from a young age so that I can give them a head start when I sign them up for piano lessons.
+
+3. As a beginner piano student, I want to engage with an entertaining teaching interface so I can learn without severe boredom.
+
+4. As a parent of a beginner piano student, I want my child to simultaneously learn and be entertained by that learning so I can leave him/her to use a computer for a while without feeling guilty about taking a break from parenting.
