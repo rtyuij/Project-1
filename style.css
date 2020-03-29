@@ -185,15 +185,16 @@ body {
     background:linear-gradient(to bottom,#eee 0%,#fff 100%)
   }
   
-  ul .white:active {
+
+  ul .whitec:active {
     border-top:1px solid #777;
     border-left:1px solid #999;
     border-bottom:1px solid #999;
     box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
-    background:linear-gradient(to bottom,#fff 0%,#e9e9e9 100%)
-  }
+    background:#ff0000;
+    }
 
-  ul .whitec:active {
+  ul .whitec:hover {
     border-top:1px solid #777;
     border-left:1px solid #999;
     border-bottom:1px solid #999;
@@ -209,7 +210,23 @@ body {
     background:#ffff00
   }
 
+  ul .whited:hover {
+    border-top:1px solid #777;
+    border-left:1px solid #999;
+    border-bottom:1px solid #999;
+    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:#ffff00
+  }
+
   ul .whitee:active {
+    border-top:1px solid #777;
+    border-left:1px solid #999;
+    border-bottom:1px solid #999;
+    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:#e4fbff
+  }
+
+  ul .whitee:hover {
     border-top:1px solid #777;
     border-left:1px solid #999;
     border-bottom:1px solid #999;
@@ -225,7 +242,23 @@ body {
     background:#ae1600
   }
 
+  ul .whitef:hover {
+    border-top:1px solid #777;
+    border-left:1px solid #999;
+    border-bottom:1px solid #999;
+    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:#ae1600
+  }
+
   ul .whiteg:active {
+    border-top:1px solid #777;
+    border-left:1px solid #999;
+    border-bottom:1px solid #999;
+    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:#ff6500
+  }
+
+  ul .whiteg:hover {
     border-top:1px solid #777;
     border-left:1px solid #999;
     border-bottom:1px solid #999;
@@ -241,7 +274,23 @@ body {
     background:#2fcd30
   }
 
+  ul .whitea:hover {
+    border-top:1px solid #777;
+    border-left:1px solid #999;
+    border-bottom:1px solid #999;
+    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:#2fcd30
+  }
+
   ul .whiteb:active {
+    border-top:1px solid #777;
+    border-left:1px solid #999;
+    border-bottom:1px solid #999;
+    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:#0000fe
+  }
+
+  ul .whiteb:hover {
     border-top:1px solid #777;
     border-left:1px solid #999;
     border-bottom:1px solid #999;
@@ -267,7 +316,17 @@ body {
     background:#cf9bff;
   }
 
+  .blackcs:hover {
+    box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
+    background:#cf9bff;
+  }
+
   .blackds:active {
+    box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
+    background:#65659a;
+  }
+
+  .blackds:hover {
     box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
     background:#65659a;
   }
@@ -277,12 +336,27 @@ body {
     background:#00cdff;
   }
 
+  .blackfs:hover {
+    box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
+    background:#00cdff;
+  }
+
   .blackgs:active {
     box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
     background:#ff00ff;
   }
 
+  .blackgs:hover {
+    box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
+    background:#ff00ff;
+  }
+
   .blackas:active {
+    box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
+    background:#8d8b8d;
+  }
+
+  .blackas:hover {
     box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
     background:#8d8b8d;
   }
