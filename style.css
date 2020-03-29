@@ -1,16 +1,157 @@
-* {
-    box-sizing:border-box
+body {
+  position: relative;
+  top: 2vh;
+  right: 1vh;
+  height: 98vh;
+  width: 98vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Monotype Corsiva";
+  align-items: center;
+  padding: 0;
+}
+
+  #TopTitleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 93%;
+    height: 50%;
+    border: 10px solid black;
+    border-radius: 1em;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    min-height: 70%;
+    padding: 1em;
+
+  }
+
+  #TopTitle {
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+    margin-right: 0.3em;
+    justify-content: center;
+    width: 100%;
+    height: 42%;
+    font-size: 15vw;
+  }
+
+  #TitleKeyboard {
+    max-width: 80vw;
+    padding: 0;
+    
+    
+  }
+
+  #StartButton {
+    margin-top: 1em;
+  
+  }
+
+  #keyboardImg {
+    width: 80vw;
+    height: 35vh;
+  }
+
+  #navbarListContainer {
+    
+    position: fixed !important;
+    top: 0 !important;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7%;
+    color: white;
+    background-color: black;
+    padding: 0;
+  }
+
+
+  a.nav-link {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    font-family: Edwardian Script ITC;
+    text-decoration: none;
+    margin: 0em 2em;
+    
+  }
+
+  .simpleScoreContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 15%;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 0;
+    font-size: 5vh;
+   
+
+  }
+
+  #quizQuestion {
+    width: 90%;
+    font-size: 8vh;
+    font-stretch: expanded;
+    margin-top: 2vh;
+    text-align: center;
+  }
+
+  #levelAndResultLink {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.3vh solid black;
+    border-radius: 0.8em;
+    width: 30vw;
+    height: 20vh;
+    margin-top: 3vh;
+  }
+
+  #level {
+    font-size: 2.5vw;
+    padding: 0 4vw 0 4vw;
+    border-radius: 0.3em;
+    border: 0.3vh solid black;
+    margin-top: 0.6vh;
+    
+  }
+
+  #ResultLink {
+    font-size: 2.5vw;
+    padding: 0 3vw 0 3vw;
+    border-radius: 0.3em;
+    border: 0.3vh solid black;
+    margin-top: 3vh;
+    background-color: lightblue;
+  }
+
+  #ResultLink > a:visited {
+    color: black;
   }
   
-  body {
-    margin:0;
+
+  #keyboardContainer {
+    box-sizing:border-box;
+    margin: 0;
     background: white;
   }
-  
-  ul {
+
+
+  ul.keyboard {
     height:18.875em;
     width:62em;
-    margin:5em auto;
+    margin:0 1em 1em 1em;
     padding:3em 0 0 3em;
     position:relative;
     border:1px solid #160801;
@@ -45,6 +186,64 @@
     box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
     background:linear-gradient(to bottom,#fff 0%,#e9e9e9 100%)
   }
+
+  ul .whitec:active {
+    border-top:1px solid #777;
+    border-left:1px solid #999;
+    border-bottom:1px solid #999;
+    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:#ff0000;
+    }
+
+  ul .whited:active {
+    border-top:1px solid #777;
+    border-left:1px solid #999;
+    border-bottom:1px solid #999;
+    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:#ffff00
+  }
+
+  ul .whitee:active {
+    border-top:1px solid #777;
+    border-left:1px solid #999;
+    border-bottom:1px solid #999;
+    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:#e4fbff
+  }
+
+  ul .whitef:active {
+    border-top:1px solid #777;
+    border-left:1px solid #999;
+    border-bottom:1px solid #999;
+    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:#ae1600
+  }
+
+  ul .whiteg:active {
+    border-top:1px solid #777;
+    border-left:1px solid #999;
+    border-bottom:1px solid #999;
+    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:#ff6500
+  }
+
+  ul .whitea:active {
+    border-top:1px solid #777;
+    border-left:1px solid #999;
+    border-bottom:1px solid #999;
+    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:#2fcd30
+  }
+
+  ul .whiteb:active {
+    border-top:1px solid #777;
+    border-left:1px solid #999;
+    border-bottom:1px solid #999;
+    box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:#0000fe
+  }
+
+  
   
   .black {
     height:8em;
@@ -56,20 +255,48 @@
     box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -5px 2px 3px rgba(0,0,0,0.6) inset,0 2px 4px rgba(0,0,0,0.5);
     background:linear-gradient(45deg,#222 0%,#555 100%)
   }
-  
-  .black:active {
+
+  .blackcs:active {
     box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
-    background:linear-gradient(to right,#444 0%,#222 100%)
+    background:#cf9bff;
+  }
+
+  .blackds:active {
+    box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
+    background:#65659a;
+  }
+
+  .blackfs:active {
+    box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
+    background:#00cdff;
+  }
+
+  .blackgs:active {
+    box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
+    background:#ff00ff;
+  }
+
+  .blackas:active {
+    box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
+    background:#8d8b8d;
+  }
+
+  li.e, li.b {
+    border-right: 2px solid black;
   }
   
   .a,.g,.d,.b,.e {
     margin:0 0 0 -1em
   }
-  
-  ul li:first-child {
+
+  ul > li.firsty {
     border-radius:5px 0 5px 5px
   }
   
-  ul li:last-child {
+  ul li.lasty {
     border-radius:0 5px 5px 5px
   }
+
+
+
+
