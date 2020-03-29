@@ -1,7 +1,6 @@
 body {
-  position: relative;
-  top: 2vh;
-  right: 1vh;
+  position: absolute;
+  top: 4vh;
   height: 98vh;
   width: 98vw;
   display: flex;
@@ -89,7 +88,7 @@ body {
     width: 30%;
     height: 15%;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 4vh;
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 0;
