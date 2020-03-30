@@ -55,7 +55,7 @@ body {
     height: 35vh;
   }
 
-  #navbarListContainer {
+  #navBarSite {
     
     position: fixed !important;
     top: 0 !important;
@@ -71,7 +71,7 @@ body {
   }
 
 
-  a.nav-link {
+  a.navLink {
     text-align: center;
     font-size: 2em;
     color: white;

@@ -44,6 +44,7 @@ let score = 0;
 let attempts = 0;
 let prevAttempt = null; //Remembers the previous note click for Level 2
 let target = null;
+
 newTarget()
 
 function newTarget() {
@@ -85,3 +86,7 @@ function playNote(note){
   var audio = new Audio(path);
   audio.play();
 }
+
+/*if(document.getElementById('Level 2').checked) { 
+  clickNote('G2');
+} */
