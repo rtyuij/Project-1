@@ -1,119 +1,87 @@
-function playC() {
-    var audio = new Audio('samples/C4.wav');
-    audio.play();
-  }
+const NOTES = {
+  "C": 'samples/C4.wav', 
+  "C# / Db": 'samples/Cs4.wav',
+  "D": 'samples/D4.wav',
+  "D# / Eb": 'samples/Ds4.wav',
+  "E": 'samples/E4.wav',
+  "F": 'samples/F4.wav',
+  "F# / Gb": 'samples/Fs4.wav',
+  "G": 'samples/G4.wav',
+  "G# / Ab": 'samples/Gs4.wav',
+  "A": 'samples/A4.wav',
+  "A# / Bb": 'samples/As4.wav',
+  "B": 'samples/B4.wav',
+  "C2": 'samples/C5.wav', 
+  "C# / Db2": 'samples/Cs5.wav',
+  "D2": 'samples/D5.wav',
+  "D# / Eb2": 'samples/Ds5.wav',
+  "E2": 'samples/E5.wav',
+  "F2": 'samples/F5.wav',
+  "F# / Gb2": 'samples/Fs5.wav',
+  "G2": 'samples/G5.wav',
+  "G# / Ab2": 'samples/Gs5.wav',
+  "A2": 'samples/A5.wav',
+  "A# / Bb2": 'samples/As5.wav',
+  "B2": 'samples/B5.wav',
+}
 
-  function playCs() {
-    var audio = new Audio('samples/Cs4.wav');
-    audio.play();
-  }
+const notesList = [
+  'C',
+  'C# / Db',
+  'D',
+  'D# / Eb',
+  'E',
+  'F',
+  'F# / Gb',
+  'G',
+  'G# / Ab',
+  'A',
+  'A# / Bb',
+  'B',
+]
 
-  function playD() {
-    var audio = new Audio('samples/D4.wav');
-    audio.play();
-  }
+let score = 0;
+let attempts = 0;
+let prevAttempt = null; //Remembers the previous note click for Level 2
+let target = null;
+newTarget()
 
-  function playDs() {
-    var audio = new Audio('samples/Ds4.wav');
-    audio.play();
-  }
+function newTarget() {
+  attempts++;
+  target = notesList[generateRandomInt(notesList.length)]
+  const targetHTML = document.querySelector("#target")
+  targetHTML.innerHTML = target;
+}
 
-  function playE() {
-    var audio = new Audio('samples/E4.wav');
-    audio.play();
+function registerAttempt(note) {
+  //if Level 1
+  if(note === target || note === (target + "2")) {
+    score++;
   }
+  //Re-render the score
+  const attemptsHTML = document.querySelector("#attempts")
+  const scoreHTML = document.querySelector("#score")
+  attemptsHTML.innerHTML = attempts;
+  scoreHTML.innerHTML = score;
 
-  function playF() {
-    var audio = new Audio('samples/F4.wav');
-    audio.play();
-  }
+  target = null; //This is how you reset the target
 
-  function playFs() {
-    var audio = new Audio('samples/Fs4.wav');
-    audio.play();
-  }
+  newTarget()
+}
 
-  function playG() {
-    var audio = new Audio('samples/G4.wav');
-    audio.play();
-  }
+function generateRandomInt(max){
+  return Math.floor(Math.random() * max)
+}
 
-  function playGs() {
-    var audio = new Audio('samples/Gs4.wav');
-    audio.play();
+function clickNote(note) {
+  playNote(note);
+  if(target) {
+    registerAttempt(note)
   }
+}
 
-  function playA() {
-    var audio = new Audio('samples/A4.wav');
-    audio.play();
-  }
-
-  function playAs() {
-    var audio = new Audio('samples/As4.wav');
-    audio.play();
-  }
-
-  function playB() {
-    var audio = new Audio('samples/B4.wav');
-    audio.play();
-  }
-
-  function playC2() {
-    var audio = new Audio('samples/C5.wav');
-    audio.play();
-  }
-
-  function playCs2() {
-    var audio = new Audio('samples/Cs5.wav');
-    audio.play();
-  }
-
-  function playD2() {
-    var audio = new Audio('samples/D5.wav');
-    audio.play();
-  }
-
-  function playDs2() {
-    var audio = new Audio('samples/Ds5.wav');
-    audio.play();
-  }
-
-  function playE2() {
-    var audio = new Audio('samples/E5.wav');
-    audio.play();
-  }
-
-  function playF2() {
-    var audio = new Audio('samples/F5.wav');
-    audio.play();
-  }
-
-  function playFs2() {
-    var audio = new Audio('samples/Fs5.wav');
-    audio.play();
-  }
-
-  function playG2() {
-    var audio = new Audio('samples/G5.wav');
-    audio.play();
-  }
-
-  function playGs2() {
-    var audio = new Audio('samples/Gs5.wav');
-    audio.play();
-  }
-
-  function playA2() {
-    var audio = new Audio('samples/A5.wav');
-    audio.play();
-  }
-
-  function playAs2() {
-    var audio = new Audio('samples/As5.wav');
-    audio.play();
-  }
-
-  function playB2() {
-    var audio = new Audio('samples/B5.wav');
-    audio.play();
-  }
+function playNote(note){
+  const path = NOTES[note]
+  var audio = new Audio(path);
+  audio.play();
+}
