@@ -135,14 +135,14 @@ body {
     background-color: lightblue;
   }
 
-  #ResultLink > a {
+  #ResultLink > a, #returnToGame > a {
     color: black;
     text-decoration: none; 
     color: black;
     }
   }
 
-  #ResultLink > a:visited {
+  #ResultLink, #returnToGame > a:visited {
     color: black;
   }
   
@@ -294,6 +294,47 @@ body {
   ul li.lasty {
     border-radius:0 5px 5px 5px
   }
+
+  header {
+    width: 100vw;
+    height: 24vh;
+    text-align: center;
+    font-size: 20vh;
+    font-family: Amadeus;
+    margin-top: 5vh;
+  }
+
+  #returnToGame {
+    font-size: 2.5vw;
+    padding: 1vh 3vw;
+    border-radius: 0.3em;
+    border: 0.3vh solid black;
+    margin: 2vh 0 5vh 0;
+    background-color: lightgreen;
+  }
+
+  .numPuncFont {
+    font-family: Monotype Corsiva;
+  }
+
+  .accidentalFont {
+    font-family: Accidentals;
+    font-size: 7vh;
+    position: relative;
+    bottom: 1.5vh;
+  }
+
+  .scoreRow {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Amadeus;
+    height: 4vh;
+    width: 100vw;
+    margin: 4.5vh 0;
+    font-size: 6vh;
+  }
+
 
 
 
