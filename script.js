@@ -40,10 +40,50 @@ const notesList = [
   'B',
 ]
 
+const notesLevel2Class = {
+  'C': "level2tempC",
+  'C# / Db': "level2tempCs",
+  'D': "level2tempD",
+  'D# / Eb': "level2tempDs",
+  'E': "level2tempE",
+  'F': "level2tempF",
+  'F# / Gb': "level2tempFs",
+  'G': "level2tempG",
+  'G# / Ab': "level2tempGs",
+  'A': "level2tempA",
+  'A# / Bb': "level2tempAs",
+  'B': "level2tempB"
+}
+
 let score = 0;
 let attempts = 0;
+let level2Counter = 0;
 let prevAttempt = null; //Remembers the previous note click for Level 2
+let level2FirstKey = "";
 let target = null;
+
+function clearScore() { //Re-render the score
+  score = 0;
+  attempts = 0;
+  const attemptsHTML = document.querySelector("#attempts")
+  const scoreHTML = document.querySelector("#score")
+  attemptsHTML.innerHTML = attempts;
+  scoreHTML.innerHTML = score;
+  target = null; //This is how you reset the target
+
+  newTarget()
+}
+
+
+function changeQuizQ() {
+  if (document.getElementById("Level 1").checked){
+      document.getElementById("quizQuestion").innerHTML = "C&nbsp;l&nbsp;i&nbsp;c&nbsp;k &nbsp;&nbsp;&nbsp;t&nbsp;h&nbsp;i&nbsp;s&nbsp;&nbsp;&nbsp; k&nbsp;e&nbsp;y&nbsp;:&nbsp;&nbsp;<span id='target'>C</span>";
+      clearScore();
+  } else if (document.getElementById("Level 2").checked){
+      document.getElementById("quizQuestion").innerHTML = "C&nbsp;l&nbsp;i&nbsp;c&nbsp;k&nbsp;&nbsp;&nbsp;a&nbsp;l&nbsp;l&nbsp;&nbsp;&nbsp;k&nbsp;e&nbsp;y&nbsp;s&nbsp;&nbsp;&nbsp;n&nbsp;a&nbsp;m&nbsp;e&nbsp;d&nbsp;:&nbsp;&nbsp;<span id='target'>C</span>";
+      clearScore();
+  }
+}
 
 newTarget()
 
@@ -55,11 +95,12 @@ function newTarget() {
 }
 
 function registerAttempt(note) {
-  //if Level 1
   if(note === target || note === (target + "2")) {
     score++;
   }
+  level2ClassRemover(level2FirstKey);
   //Re-render the score
+  level2Counter = 0;
   const attemptsHTML = document.querySelector("#attempts")
   const scoreHTML = document.querySelector("#score")
   attemptsHTML.innerHTML = attempts;
@@ -70,15 +111,69 @@ function registerAttempt(note) {
   newTarget()
 }
 
+function level2FirstTry(note) {
+  if(note === target || note === (target + "2")) {
+    return;
+  }
+  else {
+    level2ClassRemover(note);
+    attempts++;
+    target = null;
+    target = notesList[generateRandomInt(notesList.length)];
+    const targetHTML = document.querySelector("#target");
+    targetHTML.innerHTML = target;
+    const attemptsHTML = document.querySelector("#attempts")
+    attemptsHTML.innerHTML = attempts;
+    level2Counter = 0;
+  }
+}
+
 function generateRandomInt(max){
   return Math.floor(Math.random() * max)
 }
 
 function clickNote(note) {
   playNote(note);
-  if(target) {
+  if((target) && (document.getElementById("Level 1").checked)) {
     registerAttempt(note)
   }
+  else if((target) && (document.getElementById("Level 2").checked) && (level2Counter===0)) {
+    level2Counter++;
+    level2ClassAdder(note)
+    level2FirstKey = note;
+    level2FirstTry(note)
+  }
+  else if((target) && (document.getElementById("Level 2").checked) && (level2Counter===1)) {
+    if(note === level2FirstKey) {
+      return;
+    }
+    registerAttempt(note)
+  }
+}
+
+function level2ClassAdder(note) {
+  if (note.includes("2")) {
+    const remove2 = note.slice(0, -1); 
+    const level2noteClass = notesLevel2Class[remove2];
+    document.getElementById(note).classList.add(level2noteClass);
+  }
+  else {
+    const level2noteClass = notesLevel2Class[note];
+    document.getElementById(note).classList.add(level2noteClass);
+  }
+}
+
+  function level2ClassRemover(note) {
+    if (note.includes("2")) {
+      const remove2 = note.slice(0, -1); 
+      const level2noteClass = notesLevel2Class[remove2];
+      document.getElementById(note).classList.remove(level2noteClass);
+    }
+    else {
+      const level2noteClass = notesLevel2Class[note];
+      document.getElementById(note).classList.remove(level2noteClass);
+    }
+
 }
 
 function playNote(note){

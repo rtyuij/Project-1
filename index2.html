@@ -4,7 +4,6 @@
         <meta charset="utf-8" name="viewport" content="width=device-width">
         <title>Project 1</title>
         <link rel="stylesheet" href="style.css">
-        
     </head>
     <body>
       <div  id="navBarSite">   
@@ -59,10 +58,10 @@
     <div id="levelAndResultLink">
       <div id="level">
         <label for="Level 1" style="margin-right:3vw; margin-left:-0.3vw;"> 
-          <input id="Level 1" type="radio" name="level1-level2" style="vertical-align: middle; margin-left:-0.3vw" checked>Level 1
+          <input id="Level 1" type="radio" name="level1-level2" style="vertical-align: middle; margin-left:-0.3vw"  onclick="clearScore();changeQuizQ()" checked>Level 1
         </label>
         <label for="Level 2" ></label>
-          <input id="Level 2" type="radio" name="level1-level2" style="vertical-align: middle;">Level 2
+          <input id="Level 2" type="radio" name="level1-level2" style="vertical-align: middle;" onclick="clearScore();changeQuizQ()">Level 2
         </label>
       </div>
       <div id="ResultLink">
