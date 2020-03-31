@@ -57,6 +57,7 @@ const notesLevel2Class = {
 
 let score = 0;
 let attempts = 0;
+let scorePercent = 0;
 let level2Counter = 0;
 let prevAttempt = null; //Remembers the previous note click for Level 2
 let level2FirstKey = "";
@@ -65,10 +66,13 @@ let target = null;
 function clearScore() { //Re-render the score
   score = 0;
   attempts = 0;
+  scorePercent = 0;
   const attemptsHTML = document.querySelector("#attempts")
   const scoreHTML = document.querySelector("#score")
+  const scorePercentHTML = document.querySelector("#scorePercentage")
   attemptsHTML.innerHTML = attempts;
   scoreHTML.innerHTML = score;
+  scorePercentHTML.innerHTML = scorePercent;
   target = null; //This is how you reset the target
 
   newTarget()
@@ -98,13 +102,18 @@ function registerAttempt(note) {
   if(note === target || note === (target + "2")) {
     score++;
   }
-  level2ClassRemover(level2FirstKey);
+  if (document.getElementById("Level 2").checked){
+    level2ClassRemover(level2FirstKey);
+  }
   //Re-render the score
   level2Counter = 0;
+  scorePercent = Math.floor(score/attempts*100)
   const attemptsHTML = document.querySelector("#attempts")
   const scoreHTML = document.querySelector("#score")
+  const scorePercentHTML = document.querySelector("#scorePercentage")
   attemptsHTML.innerHTML = attempts;
   scoreHTML.innerHTML = score;
+  scorePercentHTML.innerHTML = scorePercent;
 
   target = null; //This is how you reset the target
 
