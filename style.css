@@ -325,7 +325,7 @@ body {
 
   .scoreRow {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     font-family: Amadeus;
     height: 4vh;

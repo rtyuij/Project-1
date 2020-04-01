@@ -61,7 +61,37 @@ let scorePercent = 0;
 let level2Counter = 0; 
 let level2FirstKey = ""; //Remembers the previous note click for Level 2
 let target = null;
-var attemptsObject;
+
+let attemptsObject = {
+  'C': 0,
+  'C# / Db': 0,
+  'D': 0,
+  'D# / Eb': 0,
+  'E': 0,
+  'F': 0,
+  'F# / Gb': 0,
+  'G': 0,
+  'G# / Ab': 0,
+  'A': 0,
+  'A# / Bb': 0,
+  'B': 0
+}
+
+let scoreObject = {
+  'C': 0,
+  'C# / Db': 0,
+  'D': 0,
+  'D# / Eb': 0,
+  'E': 0,
+  'F': 0,
+  'F# / Gb': 0,
+  'G': 0,
+  'G# / Ab': 0,
+  'A': 0,
+  'A# / Bb': 0,
+  'B': 0
+}
+
 newTarget()
 
 if (((sessionStorage.getItem("score")) !== "NaN") && ((sessionStorage.getItem("score")) !== null)) {
