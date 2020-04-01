@@ -190,7 +190,7 @@ function repopulateObjects() {
 
 function newTarget() {
   target = notesList[generateRandomInt(notesList.length)]
-
+  document.getElementById("quizQuestion").innerHTML = "C&nbsp;l&nbsp;i&nbsp;c&nbsp;k&nbsp;&nbsp;&nbsp;a&nbsp;l&nbsp;l&nbsp;&nbsp;&nbsp;k&nbsp;e&nbsp;y&nbsp;s&nbsp;&nbsp;&nbsp;n&nbsp;a&nbsp;m&nbsp;e&nbsp;d&nbsp;:&nbsp;&nbsp;<span id='target'>C</span>";
   const targetHTML = document.querySelector("#target")
   targetHTML.innerHTML = target
 }
@@ -216,6 +216,8 @@ function clearScore() { //Re-render the score
 function changeQuizQ() {
   if (document.getElementById("Level 1").checked){
       document.getElementById("quizQuestion").innerHTML = "C&nbsp;l&nbsp;i&nbsp;c&nbsp;k &nbsp;&nbsp;&nbsp;t&nbsp;h&nbsp;i&nbsp;s&nbsp;&nbsp;&nbsp; k&nbsp;e&nbsp;y&nbsp;:&nbsp;&nbsp;<span id='target'>C</span>";
+      const targetHTML = document.querySelector("#target")
+      targetHTML.innerHTML = target
 
   } else if (document.getElementById("Level 2").checked){
       document.getElementById("quizQuestion").innerHTML = "C&nbsp;l&nbsp;i&nbsp;c&nbsp;k&nbsp;&nbsp;&nbsp;a&nbsp;l&nbsp;l&nbsp;&nbsp;&nbsp;k&nbsp;e&nbsp;y&nbsp;s&nbsp;&nbsp;&nbsp;n&nbsp;a&nbsp;m&nbsp;e&nbsp;d&nbsp;:&nbsp;&nbsp;<span id='target'>C</span>";
@@ -286,6 +288,7 @@ function clickNote(note) {
   }
   else if((target) && (document.getElementById("Level 2").checked) && (level2Counter===1)) {
     if(note === level2FirstKey) {
+      document.getElementById("quizQuestion").innerHTML = "Not that " + target + ", the other " + target + "!";
       return;
     }
     else{
