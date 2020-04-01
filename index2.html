@@ -8,10 +8,10 @@
     <body>
       <div  id="navBarSite">   
         <ul>
-          <li class="nav-Item"><a class="navLink" href="index1.html">Home</a></li>
-          <li class="nav-Item"><a class="navLink" href="index2.html">Game</a></li>
-          <li class="nav-Item"><a class="navLink" href="index3.html">Results</a></li> 
-          <li class="nav-Item"><a class="navLink" href="index4.html">Updates</a></li> 
+          <li class="nav-Item"><a class="navLink" href="index1.html" onclick="dumpResultsToStorage()">Home</a></li>
+          <li class="nav-Item"><a class="navLink" href="index2.html" onclick="dumpResultsToStorage()">Game</a></li>
+          <li class="nav-Item"><a class="navLink" href="index3.html" onclick="dumpResultsToStorage()">Results</a></li> 
+          <li class="nav-Item"><a class="navLink" href="index4.html" onclick="dumpResultsToStorage()">Updates</a></li> 
         </ul>
       </div> 
 
@@ -58,14 +58,14 @@
     <div id="levelAndResultLink">
       <div id="level">
         <label for="Level 1" style="margin-right:3vw; margin-left:-0.3vw;"> 
-          <input id="Level 1" type="radio" name="level1-level2" style="vertical-align: middle; margin-left:-0.3vw"  onclick="clearScore();changeQuizQ()" checked>Level 1
+          <input id="Level 1" type="radio" name="level1-level2" style="vertical-align: middle; margin-left:-0.3vw"  onclick="changeQuizQ()" checked>Level 1
         </label>
         <label for="Level 2" ></label>
-          <input id="Level 2" type="radio" name="level1-level2" style="vertical-align: middle;" onclick="clearScore();changeQuizQ()">Level 2
+          <input id="Level 2" type="radio" name="level1-level2" style="vertical-align: middle;" onclick="changeQuizQ()">Level 2
         </label>
       </div>
       <div id="ResultLink">
-        <a href="index3.html">
+        <a href="index3.html" onclick="dumpResultsToStorage()">
           Detailed Score
           </a>
       </div>
