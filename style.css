@@ -8,7 +8,9 @@ body {
   font-family: "Monotype Corsiva";
   align-items: center;
   padding: 0;
+  z-index: 1;
 }
+
 
   #TopTitleBox {
     display: flex;
@@ -24,6 +26,7 @@ body {
     margin-right: 2%;
     min-height: 70%;
     padding: 1em;
+    z-index: 1;
 
   }
 
@@ -36,23 +39,26 @@ body {
     width: 100%;
     height: 42%;
     font-size: 15vw;
+    z-index: 1;
   }
 
   #TitleKeyboard {
     max-width: 80vw;
     padding: 0;
-    
+    z-index: inherit;
     
   }
 
   #StartButton {
     margin-top: 2em;
+    z-index: 1;
   
   }
 
   #keyboardImg {
     width: 80vw;
     height: 35vh;
+    z-index: inherit;
   }
 
   #navBarSite {
@@ -68,6 +74,7 @@ body {
     color: white;
     background-color: black;
     padding: 0;
+    z-index: inherit;
   }
 
 
@@ -78,6 +85,7 @@ body {
     font-family: Edwardian Script ITC;
     text-decoration: none;
     margin: 0em 2em;
+    z-index: inherit;
     
   }
 
@@ -93,7 +101,7 @@ body {
     margin-right: 2%;
     margin-bottom: 0;
     font-size: 5vh;
-   
+    z-index: inherit;
 
   }
 
@@ -103,6 +111,7 @@ body {
     font-stretch: expanded;
     margin-top: 2vh;
     text-align: center;
+    z-index: inherit;
   }
 
   #levelAndResultLink {
@@ -115,6 +124,7 @@ body {
     width: 30vw;
     height: 20vh;
     margin-top: 3vh;
+    z-index: inherit;
   }
 
   #level {
@@ -123,6 +133,7 @@ body {
     border-radius: 0.3em;
     border: 0.3vh solid black;
     margin-top: 0.6vh;
+    z-index: inherit;
     
   }
 
@@ -133,12 +144,14 @@ body {
     border: 0.3vh solid black;
     margin-top: 3vh;
     background-color: lightblue;
+    z-index: inherit;
   }
 
   #ResultLink > a, #returnToGame > a {
     color: black;
     text-decoration: none; 
     color: black;
+    z-index: inherit;
     }
 
   #ResultLink, #returnToGame > a:visited {
@@ -150,6 +163,7 @@ body {
     box-sizing:border-box;
     margin: 0;
     background: white;
+    z-index: inherit;
   }
 
 
@@ -162,7 +176,8 @@ body {
     border:1px solid #160801;
     border-radius:1em;
     background:black;
-    box-shadow:0 0 50px rgba(0,0,0,0.5) inset,0 1px rgba(212,152,125,0.2) inset,0 5px 15px rgba(0,0,0,0.5)
+    box-shadow:0 0 50px rgba(0,0,0,0.5) inset,0 1px rgba(212,152,125,0.2) inset,0 5px 15px rgba(0,0,0,0.5);
+    z-index: inherit;
   }
   
   li {
@@ -170,7 +185,8 @@ body {
     padding:0;
     list-style:none;
     position:relative;
-    float:left
+    float:left;
+    z-index: inherit;
   }
   
   ul .white {
@@ -185,12 +201,13 @@ body {
   }
   
 
-  ul .level2tempC, .whitec:active, .whitec:hover {
+  l .level2tempC, .whitec:active, .whitec:hover {
     border-top:1px solid #777;
     border-left:1px solid #999;
     border-bottom:1px solid #999;
     box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
     background:#ff0000;
+    z-index: inherit;
     }
 
   ul .level2tempD, .whited:active, .whited:hover {
@@ -198,7 +215,8 @@ body {
     border-left:1px solid #999;
     border-bottom:1px solid #999;
     box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
-    background:#ffff00
+    background:#ffff00;
+    z-index: inherit;
   }
 
   ul .level2tempE, .whitee:active, .whitee:hover {
@@ -206,15 +224,18 @@ body {
     border-left:1px solid #999;
     border-bottom:1px solid #999;
     box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
-    background:#e4fbff
+    background:#e4fbff;
+    z-index: inherit;
   }
+
 
   ul .level2tempF, .whitef:active, .whitef:hover {
     border-top:1px solid #777;
     border-left:1px solid #999;
     border-bottom:1px solid #999;
     box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
-    background:#ae1600
+    background:#ae1600;
+    z-index: inherit;
   }
 
   ul .level2tempG, .whiteg:active, .whiteg:hover {
@@ -222,7 +243,8 @@ body {
     border-left:1px solid #999;
     border-bottom:1px solid #999;
     box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
-    background:#ff6500
+    background:#ff6500;
+    z-index: inherit;
   }
 
   ul .level2tempA, .whitea:active, .whitea:hover {
@@ -230,7 +252,8 @@ body {
     border-left:1px solid #999;
     border-bottom:1px solid #999;
     box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
-    background:#2fcd30
+    background:#2fcd30;
+    z-index: inherit;
   }
 
   ul .level2tempB, .whiteb:active, .whiteb:hover {
@@ -238,7 +261,8 @@ body {
     border-left:1px solid #999;
     border-bottom:1px solid #999;
     box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
-    background:#0000fe
+    background:#0000fe;
+    z-index: inherit;
   }
  
   .black {
@@ -267,6 +291,7 @@ body {
     background:#00cdff;
   }
 
+
   .level2tempGs, .blackgs:active, .blackgs:hover {
     box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
     background:#ff00ff;
@@ -280,14 +305,16 @@ body {
 
   li.e, li.b {
     border-right: 2px solid black;
+    z-index: inherit;
   }
   
   .a,.g,.d,.b,.e {
-    margin:0 0 0 -1em
+    margin:0 0 0 -1em;
+    z-index: inherit;
   }
 
   ul > li.firsty {
-    border-radius:5px 0 5px 5px
+    border-radius:5px 0 5px 5px;
   }
   
   ul li.lasty {
@@ -301,6 +328,7 @@ body {
     font-size: 20vh;
     font-family: Amadeus;
     margin-top: 5vh;
+    z-index: inherit;
   }
 
   #returnToGame {
@@ -310,10 +338,12 @@ body {
     border: 0.3vh solid black;
     margin: 2vh 0 5vh 0;
     background-color: lightgreen;
+    z-index: inherit;
   }
 
   .numPuncFont {
     font-family: Monotype Corsiva;
+    z-index: inherit;
   }
 
   .accidentalFont {
@@ -321,6 +351,7 @@ body {
     font-size: 7vh;
     position: relative;
     bottom: 1.5vh;
+    z-index: inherit;
   }
 
   .scoreRow {
@@ -332,8 +363,174 @@ body {
     width: 100vw;
     margin: 4.5vh 0;
     font-size: 6vh;
+    z-index: inherit;
   }
 
+  #overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  
+  #emailModal {
+    
+    background-color: black;
+    border-radius: 1em;
+    width: 90vh;
+    min-width: 90vh;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.19);
+    position: absolute;
+    z-index: 3;
+    top: 15%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .closeModal {
+    width: 0.5em;
+    height: 0.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vh;
+    color: white;
+    position: absolute;
+    right: 2%;
+    top: 4%;
+    z-index: 3;
+    padding-right: 0.15em;
+    padding-top: 0.08em;
+    border: 2px solid white;
+    border: 2px 2px 2px 2px;
+    border-radius: 1000em;
+    border-width: 100%;
+  }
+
+  #mailIcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 8px solid white;
+    padding: 0.24em 0.55em 0.25em 0.20em;
+    border-radius: 5em;
+    position: absolute;
+    left: 41%;
+    top: 5%;
+    z-index: inherit;
+    width: 0.65em;
+    height: 0.90em;
+    font-size: 10vh;
+    border-style: double;
+    border-width: 1vh;
+    z-index: 3;
+  }
+
+  #subscribe {
+    width: 85vh;
+    height: 35vh;
+    max-width: 90%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 32%;
+    left: 4.5%;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    z-index: 3;
+  }
+
+  #subscribeMessage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    font-family: "Varela Round";
+    font-weight: bold;
+    z-index: 3;
+    ;
+  }
+
+  input[type=text], input[type=emails] select {
+    position: absolute;
+    right: 28%;
+    width: 40%;
+    height: 3.7vh;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    align-self: auto;
+    padding-left: 2%;
+    font-size: 2.1vh;
+    font-stretch: expanded;
+  }
+
+  input[type=submit] {
+    color: white;
+    background:purple;
+    position: absolute;
+    right: 36%;
+    width: 25%;
+    height: 18%;
+    margin-top: 4vh;
+    text-align: center;
+    flex-direction: row;
+    border: 1px solid white;
+    border-radius: 4em;
+    box-sizing: border-box;
+    font-family: "Varela Round";
+    font-size: 2vh;
+    border: none;
+  }
+
+  .formLabel {
+    width: 13vh; 
+    align-self: flex-end;
+    position: absolute;
+    left: 15%;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 1.8vh;
+    font-family: "Monotype Corsiva";
+    font-size: 2.5vh;
+  }
+
+  #email {
+    position: absolute;
+    left: 19.7%;
+    line-height: 1.2vh;
+  }
+
+  .formRow {
+    margin-top: 0.6vh;
+    height: 3.2vw;
+    width: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+  }
 
 
 
