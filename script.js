@@ -294,7 +294,7 @@ function clickNote(note) {
   }
   else if((target) && (document.getElementById("Level 2").checked) && (level2Counter===1)) {
     if(note === level2FirstKey) {
-      document.getElementById("quizQuestion").innerHTML = "Not that " + target + ", the other " + target + "!";
+      document.getElementById("quizQuestion").innerHTML = "Not that " + target + " again, the other " + target + "!";
       return;
     }
     else{
