@@ -197,8 +197,9 @@ body {
       border-bottom:1px solid #bbb;
       border-radius:0 0 5px 5px;
       box-shadow:-1px 0 0 rgba(255,255,255,0.8) inset,0 0 5px #ccc inset,0 0 3px rgba(0,0,0,0.2);
-      background:linear-gradient(to bottom,#eee 0%,#fff 100%)
+      background:linear-gradient(to bottom,#eee 0%,#fff 100%);
     }
+
     
   
       ul .level2tempC, .whitec:active, .whitec:hover {
@@ -216,7 +217,7 @@ body {
       border-bottom:1px solid #999;
       box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
       background:#ffff00;
-      z-index: inherit;
+      z-index: inherit;  
     }
   
     ul .level2tempE, .whitee:active, .whitee:hover {
@@ -225,7 +226,7 @@ body {
       border-bottom:1px solid #999;
       box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
       background:#e4fbff;
-      z-index: inherit;
+      z-index: inherit; 
     }
   
   
@@ -235,7 +236,7 @@ body {
       border-bottom:1px solid #999;
       box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
       background:#ae1600;
-      z-index: inherit;
+      z-index: inherit; 
     }
   
     ul .level2tempG, .whiteg:active, .whiteg:hover {
@@ -244,7 +245,7 @@ body {
       border-bottom:1px solid #999;
       box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
       background:#ff6500;
-      z-index: inherit;
+      z-index: inherit;  
     }
   
     ul .level2tempA, .whitea:active, .whitea:hover {
@@ -253,7 +254,7 @@ body {
       border-bottom:1px solid #999;
       box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
       background:#2fcd30;
-      z-index: inherit;
+      z-index: inherit;    
     }
   
     ul .level2tempB, .whiteb:active, .whiteb:hover {
@@ -262,7 +263,7 @@ body {
       border-bottom:1px solid #999;
       box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
       background:#0000fe;
-      z-index: inherit;
+      z-index: inherit;    
     }
    
     .black {
@@ -278,23 +279,23 @@ body {
   
     .level2tempCs, .blackcs:active, .blackcs:hover {
       box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
-      background:#cf9bff;
+      background:#cf9bff;   
     }
   
     .level2tempDs, .blackds:active, .blackds:hover {
       box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
-      background:#65659a;
+      background:#65659a;    
     }
   
     .level2tempFs, .blackfs:active, .blackfs:hover {
       box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
-      background:#00cdff;
+      background:#00cdff;      
     }
   
   
     .level2tempGs, .blackgs:active, .blackgs:hover {
       box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
-      background:#ff00ff;
+      background:#ff00ff; 
     }
   
     .level2tempAs, .blackas:active, .blackas:hover {
@@ -397,6 +398,17 @@ body {
       to {
         transform: translateY(0);
         opacity: 1;
+      }
+    }
+
+    @keyframes color-me-in {
+      /* You could think of as "step 1" */
+      0% {
+        background: orange;
+      }
+      /* You could think of as "step 2" */
+      100% {
+        background: black;
       }
     }
   

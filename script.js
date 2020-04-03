@@ -234,6 +234,7 @@ function changeQuizQ() {
   }
 }
 
+
 function registerAttempt(note) {
   attempts++;
   if(note === target || note === (target + "2")) {
@@ -242,6 +243,7 @@ function registerAttempt(note) {
   }
   if (document.getElementById("Level 2").checked){
     level2ClassRemover(level2FirstKey);
+    level2ClassRemover(note);
   }
   //Re-render the score
   level2Counter = 0;
