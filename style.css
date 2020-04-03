@@ -425,6 +425,7 @@ body {
     #mailIconContainer{
       text-align: center;
     }
+
     #mailIcon {
       border: 8px solid white;
       padding: 0.24em 0.55em 0.25em 0.20em;
@@ -441,10 +442,6 @@ body {
     #mailIcon .fa-envelope{
       position: relative;
       top: -4px;
-    }
-
-    .modalContent {
-      margin-top: 1rem;
     }
   
     #subscribe {
