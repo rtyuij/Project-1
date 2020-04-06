@@ -11,6 +11,11 @@ body {
     z-index: 1;
   }
   /** TODO Add import url for font */
+
+  img {
+    max-width: 100%;
+    height: auto;
+}
   
     #TopTitleBox {
       display: flex;
