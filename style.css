@@ -12,31 +12,6 @@ body {
   }
   /** TODO Add import url for font */
 
-  @font-face {
-    font-family: 'Montype Corsiva';
-    src: 'https://github.com/rtyuij/Project-1/blob/master/MTCORSVA.TTF'('MTCORSVA.TTF')
-  }
-
-  @font-face {
-    font-family: 'Amadeus';
-    src: 'https://github.com/rtyuij/Project-1/blob/master/AMADEUS.TTF'('AMADEUS.TTF');
-  }
-
-  @font-face {
-    font-family: 'Edwardian Script ITC';
-    src: 'https://github.com/rtyuij/Project-1/blob/master/ITCEDSCR.TTF'('ITCEDSCR.TTF');
-  }
-
-  @font-face {
-    font-family: 'Accidentals';
-    src: 'https://github.com/rtyuij/Project-1/blob/master/Accidentals.ttf'('Accidentals.ttf');
-  }
-
-  @font-face {
-    font-family: 'Varela Round';
-    src: 'https://github.com/rtyuij/Project-1/blob/master/VarelaRound-Regular.ttf'('VarelaRound-Regular.ttf');
-  }
-
   img {
     max-width: 100%;
     height: auto;
